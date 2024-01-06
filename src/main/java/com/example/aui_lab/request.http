@@ -1,0 +1,54 @@
+### Get all Albums
+GET http://localhost:8080//api/albums
+
+### Get all Artists
+GET http://localhost:8080//api/artists
+
+### Get Album by Artist's UUID
+GET http://localhost:8080//api/artists/566b9053-d432-4d61-a0a7-d0dae385bdad/albums
+
+### Delete an album by ID
+DELETE  http://localhost:8080//api/albums/342e588a-297d-4028-b882-6b04cc12daf6
+
+### Add an album
+PUT http://localhost:8080//api/albums/566b9053-d432-4d61-a0a7-d0dae385bdad
+Content-Type: application/json
+Accept: application/json
+
+{
+"title": "Armadillo",
+"release_year": 2024
+}
+
+### Modify an album
+PATCH http://localhost:8080//api/albums/10dfd835-ce62-4b6e-aab0-16e98728c8d0
+Content-Type: application/json
+Accept: application/json
+
+{
+"title": "Not so Dangerous Woman",
+"release_year": 2022
+}
+
+### Add Artist
+PUT http://localhost:8080//api/artists/new
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Tyler Joseph",
+  "age": 33
+}
+
+### Modify an Artist
+PATCH http://localhost:8080//api/artists/0dca1a28-b50c-4041-91cd-249e0622c605
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Kanye West",
+  "age": 56
+}
+
+### Delete Artist
+DELETE  http://localhost:8080//api/artists/c7314cad-25fb-4eab-a622-000f22e31c28
